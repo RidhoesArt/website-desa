@@ -1,0 +1,43 @@
+
+/* DATA ADMINISTRATIF */	
+.data-administratif{
+	display: grid;
+	width: 100%;
+	grid-template-areas: 
+	'container main';
+	gap: 3%;
+}
+
+.data-administratif .container{
+	grid-area: container;
+	width: 100%;
+	height: max-content;
+	padding: 0;
+}
+
+.data-administratif .main{
+	grid-area: main;
+}
+
+.card span{
+	list-style: none;
+}
+
+.data-administratif .main .media{
+	display: flex;
+	gap: 3%;
+	align-items: center;
+}
+
+.data-administratif .main i{
+	color: blue;
+}
+
+.data-administratif .container .card{
+	padding: 0;
+}
+
+.data-administratif .container .card .card-header{
+	text-align:left;
+	background-color:#1F2755;
+}

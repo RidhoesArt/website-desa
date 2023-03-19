@@ -1,0 +1,1022 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* <?header */
+#header{
+	display: grid;
+	grid-template-areas: 
+	'logo text social-media';
+	width: 100%;
+	height: 50vh;
+	align-items: center;
+	background: linear-gradient(90deg, rgba(0,0,0,.5),rgba(0,0,0,.7)), url("../img/bg-3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#header .jumbotron{
+	width: 100%;
+	margin-top: 6%;
+}
+
+#header .logo{
+	grid-area: logo;
+	display: flex;
+	background-color: red;
+}
+
+#header .identitas{
+	grid-area: identitas;
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+}
+
+#header .identitas .hub{
+	display: flex;
+	background-color: yellow;
+}
+
+#header .social-media{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4%;
+	align-content: center;
+	grid-area: social-media;
+	background-color: blue;
+}
+
+#header .space{
+	width:100%;
+	display:grid;
+	grid-template-areas: 'identitas social-media';
+	background-color:pink;
+	align-items:center;
+}
+
+/* @media only screen and (max-width: 600px) {
+	#header .social-media{
+		display: none;
+	}
+} */
+
+
+/* header?> */
+
+
+/* #header {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	background: linear-gradient(90deg, rgba(0,0,0,.5),rgba(0,0,0,.7)), url("../img/bg-3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+} */
+
+#header .header-box h3 {
+	font-weight: 900;
+}
+
+#header .header-box h3,
+#header .header-box p {
+	color: #fff;
+}
+
+/* <?navbar2 */
+.navbar2{
+	display: grid;
+	grid-template-areas: 'logo keterangan media';
+	position:fixed;
+	justify-content: space-between;
+	z-index:99;
+	width:100%;
+	box-shadow: 0 3px 2px -2px gray;
+}
+
+.navbar2 .judul{
+	display: flex;
+	background-color: black;
+}
+
+.navbar2 .logo{
+	grid-area: logo;
+	background-color: red;
+}
+
+.navbar2 .keterangan{
+	grid-area: keterangan;
+	background-color: blue;
+}
+
+.navbar2 .keterangan text{
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar2 .media{
+	grid-area: media;
+	display: flex;
+	width: 80%;
+	justify-content: flex-end;
+	gap:4%;
+	background-color: yellow;
+}
+
+.navbar2 .media a{
+	display: flex;
+	width: 20%;
+	justify-content: flex-end;
+	background-color: blue;
+}
+
+.navbar2 .media img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.navbar2 .nav-item a{
+	color:black;
+}
+
+
+/* navbar2?> */
+
+
+.navbar .nav-item a,
+.navbar .navbar-brand {
+	color: #fff!important;
+}
+
+.navbar a{
+	font-weight: 900;
+}
+
+.navbar .collapse .dropdown-menu :hover{
+	background-color:#1F2755;
+}
+
+
+.card{
+	padding: 10px;
+}
+
+#sec-article {
+	position: relative;
+	margin-top: 20px;
+	display: block;
+}
+.col li {
+	display: inline-block;
+}
+.col li i {
+	margin-right: 5px;
+	font-size: 12px!important;
+}
+#sec-article .img-thumbnail {
+	width: 380px;
+	height: 250px;
+}
+#sec-article #article-text {
+	text-align: justify;
+}
+
+.navbar ul li a:hover{
+	background-color: #1F2755;
+}
+
+
+/* Berita Section */
+.container2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.container2 .center a:hover{
+	background-color: #575757;
+}
+
+.container2 .center h5{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.container2 .end{
+	width: 50vmin;
+	border: 10px solid #ffffff;
+	border-radius: 8px;
+	box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.container2 .end .wrapper{
+	width: 100%;
+	display: flex;
+	animation: slide 16s infinite;
+}
+
+.navbar2{
+	background-color: #ffffff;
+}
+
+.sosmed img{
+	width:30px;
+	border-radius:50%;
+	border: none;
+}
+
+.sosmed img:hover{
+	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* card */
+.container .kartu .card2{
+	background-color: red;
+}
+
+
+/*Berita Menu*/
+
+.grid-container{
+	display: grid;
+	grid-template-areas: 
+		'first mid last';
+	gap: 40px;
+}
+
+.item1{
+	grid-area: first;
+}
+
+.item2{
+	grid-area: mid;
+}
+
+.item3{
+	grid-area: last;
+}
+
+/* <?Footer */
+#footer{
+	width: 100%;
+	margin-top: 5%;
+	padding-top: 1.5%;
+	display: grid;
+	gap: 5%;
+	grid-template-areas: 
+	'footer2'
+	'copy-right';
+}
+
+#footer .footer2{
+	grid-area: footer2;
+	display: grid;
+	text-align: justify;
+	grid-template-areas: 
+	'tentang-desa categories recent';
+	gap: 10%;
+	padding: 0 1% 0 1%;
+	width: 100%;
+	color: #ffffff;
+}
+
+#footer .footer2 p{
+	font-weight: 600;
+}
+
+#footer .footer2 .tentang-desa{
+	grid-area: tentang-desa;
+}
+
+#footer .footer2 .categories{
+	grid-area: categories;
+}
+
+#footer .footer2 .recent{
+	grid-area: recent;
+}
+
+#footer h4{
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 600;
+	text-decoration: underline solid crimson 3px;
+}
+
+#footer .copy-right{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	font-weight: 600;
+	padding: 1%;
+	background-color:#1F2755;
+	color: white;
+}
+
+
+/* VISI MISI SECTION */
+.visi-misi-section{
+	display: grid;
+	width: 100%;
+	height: auto;
+	gap: 3%;
+	grid-template-areas: 
+	'visi-misi visi-misi informasi-tambahan';
+}
+
+.visi-misi{
+	grid-area: visi-misi;
+	padding: 0 3% 0 3%;
+	display: grid;
+	grid-template-areas: 
+	'header'
+	'visi'
+	'misi';
+	font-weight: bold;
+	border-radius: 0.5%;
+}
+
+.visi-misi .header{
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	padding: 1%;
+	gap: 1%;
+}
+
+.visi-misi .header .circle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e0e5ff;
+	padding: 1%;
+	border-radius: 100%;
+}
+
+.visi-misi .header i{
+	color: blue;
+}
+
+.visi-misi h5{
+	font-weight: 600;
+}
+
+.visi-misi h1{
+	font-family: 'Noto Serif', serif;
+	color: crimson;
+	display: flex;
+	justify-content: center;
+}
+
+.visi-misi .visi h3{
+	font-weight: 900;
+}
+
+.visi-misi .visi{
+	grid-area: visi;
+}
+
+.visi-misi .misi{
+	grid-area: misi;
+	margin-top: 7%;
+}
+
+.visi-misi .misi div{
+	text-align: start;
+}
+
+.visi-misi .arah-kebijakan{
+	display: flex;
+	flex-direction: column;
+	margin-top: 7%;
+	text-align: left;
+}
+
+/* Sejarah-Desa */
+.sejarah-desa-section{
+	display: grid;
+	width: 100%;
+	height: auto;
+	gap: 3%;
+	grid-template-areas: 
+	'sejarah-desa sejarah-desa informasi-tambahan';
+}
+
+.sejarah-desa{
+	text-align: justify;
+	width: 100%;
+	height: min-content;
+	grid-area: sejarah-desa;
+}
+
+.sejarah-desa h5{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Penduduk */
+.penduduk-section{
+	display: grid;
+	grid-template-areas:
+	'penduduk penduduk informasi-tambahan';
+	width: 100%;
+	height: auto;
+	gap: 3%;
+}
+
+.penduduk-section .penduduk{
+	grid-area: penduduk;
+	height: min-content;
+	background-color: #ffffff;
+}
+
+/* visi-misi?> */
+
+/* <? Informasi Tambahan */
+.informasi-tambahan{
+	grid-area: informasi-tambahan;
+	display: grid;
+	grid-template-areas: 
+	'aparatur-desa'
+	'album-galeri'
+	'peta'
+	'lokasi-kantor';
+	gap: 0.3%;
+	height: min-content;
+	background-color: #eaeaea;
+}
+
+/* Aparatur Desa */
+.informasi-tambahan .aparatur-desa{
+	grid-area: aparatur-desa;
+	display: flex;
+	flex-direction: column;
+	padding: 3%;
+	height: min-content;
+	background-color: #ffffff;
+	border-radius: 2%;
+}
+
+.informasi-tambahan .header{
+	display: flex;
+	margin-bottom: 3%;
+}
+
+.informasi-tambahan h5{
+	font-weight: bold;
+}
+
+
+/* Album-Galeri */
+.informasi-tambahan .album-galeri{
+	grid-area: album-galeri;
+	display: flex;
+	flex-direction: column;
+	padding: 3%;
+	height: min-content;
+	background-color: #ffffff;
+	border-radius: 2%;
+}
+
+/* .informasi-tambahan .album-galeri .galeri{
+	padding: 5%;
+	background-color: red;
+} */
+
+.informasi-tambahan .album-galeri .album{
+	display:flex;
+	gap: 7px;
+	width: auto;
+	background-color: red;
+}
+
+div.gallery {
+	background-color: #ffffff;
+	margin: auto;
+	float: left;
+	width: 47%;
+	padding: 4%;
+}
+  
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+  
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+.informasi-tambahan .album-galeri .album .galeri1{
+	height: min-content;
+}
+
+.informasi-tambahan .album-galeri .album .galeri2{
+	height: min-content;
+}
+
+.informasi-tambahan .album-galeri .album .galeri3{
+	height: min-content;
+}
+
+.informasi-tambahan .album-galeri .album .galeri4{
+	height: min-content;
+}
+
+/* Peta Desa */
+.informasi-tambahan .peta{
+	grid-area: peta;
+	padding-bottom: 3%;
+	border-radius: 2%;
+	background-color: #ffffff;
+}
+
+.informasi-tambahan .peta .judul{
+	display: flex;
+	padding: 3%;
+}
+
+.informasi-tambahan .peta .wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.informasi-tambahan .peta .maps{
+	display: flex;
+}
+
+/* Lokasi Kantor */
+.informasi-tambahan .lokasi-kantor{
+	grid-area: lokasi-kantor;
+	width: 100%;
+	height: min-content;
+	background-color: #ffffff;
+}
+
+.informasi-tambahan .lokasi-kantor .kantor{
+	display: grid;
+	grid-template-areas: 
+	'lokasi detail';
+}
+
+.informasi-tambahan .lokasi-kantor .lokasi{
+	grid-area: lokasi;
+}
+
+.informasi-tambahan .lokasi-kantor .detail{
+	grid-area: detail;
+}
+
+
+/* .lokasi-kantor .info-desa{
+	display: flex;
+} */
+
+/* Lokasi Desa */
+
+/* Informasi Tambahan ?> */
+
+
+/*  */
+@media only screen and (max-width: 990px) {
+	.informasi-tambahan .album-galeri .album{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.informasi-tambahan .lokasi-kantor .kantor{
+		display: grid;
+		grid-template-areas: 
+		'lokasi '
+		'detail';
+	}
+
+	.informasi-tambahan .lokasi-kantor{
+		padding: 0;
+		margin: 0;
+	}
+
+	div.gallery {
+		flex-direction: column;
+		margin: 5px auto 5px auto 5px;
+		float: left;
+		width: 90%;
+	}
+	
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	.sejarah-desa-section h5{
+		text-align: center;
+	}
+
+}
+
+
+/* Medium/tablet landscape */
+@media only screen and (max-width: 768px) {
+	#header{
+		justify-content: center;
+	}
+	
+	#header .space{
+		display: grid;
+		grid-template-areas: 
+		'identitas'
+		'social-media';
+		justify-content: center;
+		background-color: red;
+		flex-direction: column;
+	}
+	
+	#header .identitas .alamat{
+		display: none;
+	}
+
+	#header .space .identitas{
+		grid-area: identitas;
+	}
+
+	#header .space .social-media{
+		grid-area: social-media;
+	}
+	
+	#header .logo{
+		display: none;
+	}
+	
+	.navbar2 .media{
+		display: none;
+	}
+	
+	.navbar2 .keterangan .excerpt1{
+		display: none;
+	}
+	
+	.navbar2 .keterangan .kabupaten{
+		display: none;
+	}
+	
+	#header {
+		height: 60vh;
+	}
+	
+	#sec-article {
+		margin: 0 auto!important;
+	}
+	
+	#footer{
+		display: grid;
+		margin-top: 7.8%;
+		grid-template-areas: 
+		'footer2'
+		'copy-right';
+		justify-content: center;
+	}
+	
+	#footer .footer2{
+		grid-area: footer2;
+		display: grid;
+		text-align: center;
+		width: 100%;
+		padding: 3% 3% 3% 3%;
+		gap: 3%;
+		grid-template-areas: 
+		'tentang-desa' 
+		'categories'
+		'recent';
+	}
+
+	#footer .footer2 p{
+		font-weight: 600;
+	}
+	
+	#footer .copy-right{
+		display: flex;
+		grid-area: copy-right;
+		flex-direction:column;
+	}
+	
+	
+	/* Visi-Misi */
+	.visi-misi-section{
+		display: grid;
+		gap: 0.1%;
+		grid-template-areas: 
+		'visi-misi'
+		'informasi-tambahan';
+		padding-bottom: 0;
+	}
+	
+	.visi-misi{
+		grid-area: visi-misi;
+		display: grid;
+		grid-template-areas: 
+		'header'
+		'visi'
+		'misi';
+		font-weight: bold;
+	}
+	
+	/* Informasi Tambahan */
+	.informasi-tambahan{
+		grid-area: informasi-tambahan;
+		display: grid;
+		z-index: 98;
+		grid-template-areas: 
+		'aparatur-desa'
+		'album-galeri'
+		'peta'
+		'lokasi-kantor';
+		height: min-content;
+	}
+	
+	/* Aparatur Desa */
+	.informasi-tambahan .aparatur-desa{
+		grid-area: aparatur-desa;
+		display: flex;
+		flex-direction: column;
+		padding: 3%;
+		height: min-content;
+	}
+	
+	/* Album Galeri */
+	.informasi-tambahan .album-galeri{
+		grid-area: album-galeri;
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		padding: 3%;
+		height: min-content;
+	}
+	
+	.informasi-tambahan .album-galeri .album{
+		display: flex;
+		flex-direction: row;
+		background-color: blue;
+	}
+	
+	/* Peta Desa */
+	.informasi-tambahan .peta{
+		grid-area: peta;
+	}
+	
+	.informasi-tambahan .peta .judul{
+		display: flex;
+		padding: 3%;
+	}
+	
+	.informasi-tambahan .peta .wrapper{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.informasi-tambahan .peta .maps{
+		display: flex;
+	}
+	
+	/* Lokasi kantor */
+	.informasi-tambahan .lokasi-kantor{
+		grid-area: lokasi-kantor;
+	}
+
+	.informasi-tambahan .lokasi-kantor ul{
+		display: grid;
+	}
+
+	.informasi-tambahan .lokasi-kantor .kantor{
+		display: grid;
+		grid-template-areas: 
+		'lokasi detail';
+	}
+
+	div.gallery {
+		background-color: #ffffff;
+		margin: auto;
+		float: left;
+		width: 50%;
+		padding: 1%;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+	  
+	div.desc {
+		padding: 10px;
+		text-align: center;
+	}
+
+	/* SEJARAH DESA */
+	.sejarah-desa-section{
+		display: grid;
+		gap: 0.1%;
+		grid-template-areas: 
+		'sejarah-desa'
+		'informasi-tambahan';
+		padding-bottom: 0;
+	}
+
+	.sejarah-desa-section h5{
+		text-align: center;
+	}
+
+
+}
+
+
+/* Max-width (600px/handphone) */
+@media only screen and (max-width: 600px) {
+	#header{
+		justify-content: center;
+	}
+
+	#header .space{
+		display: grid;
+		grid-template-areas: 
+		'identitas'
+		'social-media';
+		justify-content: center;
+		background-color: red;
+		flex-direction: column;
+	}
+
+	#header .identitas .alamat{
+		display: none;
+	}
+
+	#header .space .identitas{
+		grid-area: identitas;
+	}
+
+	#header .space .social-media{
+		grid-area: social-media;
+	}
+
+	#header .logo{
+		display: none;
+	}
+
+	.navbar2 .media{
+		display: none;
+	}
+
+	.navbar2 .keterangan .excerpt1{
+		display: none;
+	}
+
+	.navbar2 .keterangan .kabupaten{
+		display: none;
+	}
+
+	#header {
+		height: 60vh;
+	}
+	
+	#sec-article {
+		margin: 0 auto!important;
+	}
+
+	#footer{
+		display: grid;
+		margin-top: 7.8%;
+		grid-template-areas: 
+		'footer2'
+		'copy-right';
+		justify-content: center;
+	}
+
+	#footer .footer2{
+		grid-area: footer2;
+		display: grid;
+		text-align: center;
+		width: 100%;
+		padding: 3% 3% 3% 3%;
+		gap: 3%;
+		grid-template-areas: 
+		'tentang-desa' 
+		'categories'
+		'recent';
+	}
+
+	#footer .footer2 p{
+		font-weight: 600;
+	}
+
+	#footer .copy-right{
+		display: flex;
+		grid-area: copy-right;
+		flex-direction:column;
+	}
+	
+
+/* Visi-Misi SECTION */
+	.visi-misi-section{
+		display: grid;
+		gap: 0.1%;
+		grid-template-areas: 
+		'visi-misi'
+		'informasi-tambahan';
+		padding-bottom: 0;
+	}
+
+	.visi-misi{
+		grid-area: visi-misi;
+		display: grid;
+		grid-template-areas: 
+		'header'
+		'visi'
+		'misi';
+		font-weight: bold;
+	}
+
+/* Informasi Tambahan */
+	.informasi-tambahan{
+		grid-area: informasi-tambahan;
+		display: grid;
+		z-index: 98;
+		grid-template-areas: 
+		'aparatur-desa'
+		'album-galeri'
+		'peta'
+		'lokasi-kantor';
+		height: min-content;
+	}
+
+	/* Aparatur Desa */
+	.informasi-tambahan .aparatur-desa{
+		grid-area: aparatur-desa;
+		display: flex;
+		flex-direction: column;
+		padding: 3%;
+		height: min-content;
+	}
+
+	/* Album Galeri */
+	.informasi-tambahan .album-galeri{
+		grid-area: album-galeri;
+		display: flex;
+		width: auto;
+		flex-direction: column;
+		padding: 3%;
+		height: min-content;
+	}
+
+	.informasi-tambahan .album-galeri .album{
+		display: flex;
+		background-color: blue;
+	}
+	
+	/* Peta Desa */
+	.informasi-tambahan .peta{
+		grid-area: peta;
+	}
+	
+	.informasi-tambahan .peta .judul{
+		display: flex;
+		padding: 3%;
+	}
+	
+	.informasi-tambahan .peta .wrapper{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.informasi-tambahan .peta .maps{
+		display: flex;
+	}
+	
+	/* Lokasi kantor */
+	.informasi-tambahan .lokasi-kantor{
+		grid-area: lokasi-kantor;
+	}
+
+	.informasi-tambahan .lokasi-kantor ul{
+		display: grid;
+	}
+
+	/* SEJARAH DESA */
+	.sejarah-desa-section{
+		display: grid;
+		gap: 0.1%;
+		grid-template-areas: 
+		'sejarah-desa'
+		'informasi-tambahan';
+		padding-bottom: 0;
+	}
+
+	.sejarah-desa-section h5{
+		text-align: center;
+	}
+
+}
+
