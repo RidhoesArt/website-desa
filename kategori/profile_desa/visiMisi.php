@@ -267,7 +267,7 @@
                         <a data-fancybox="gallery" href="http://pedekik.desa.id/desa/logo/KNT__sid__nGVaxTQ.jpg">
                         <img src="assets/img/nih.jpg" width="100%" class="img-responsive cover" alt="">
                         </a>
-                        <table width="100%" style="background-color:blue;">
+                        <table width="100%">
                             <tr style="border-bottom: 1px solid #ddd;">
                                 <td class="label-info-desa" width="25%" height="30px">Alamat</td>
                                 <td width="5%" class="text-center">:</td>

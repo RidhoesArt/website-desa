@@ -25,37 +25,35 @@
 #header .logo{
 	grid-area: logo;
 	display: flex;
-	background-color: red;
 }
 
 #header .identitas{
 	grid-area: identitas;
 	display: flex;
 	flex-direction: column;
-	background-color: grey;
 }
 
 #header .identitas .hub{
 	display: flex;
-	background-color: yellow;
+}
+
+
+#header .space{
+	width:100%;
+	display:grid;
+	grid-template-areas: 'identitas identitas social-media';
+	align-items:center;
+	gap: 5%;
 }
 
 #header .social-media{
 	display: flex;
+	margin-right: 20px;
 	justify-content: center;
 	align-items: center;
 	gap: 4%;
 	align-content: center;
 	grid-area: social-media;
-	background-color: blue;
-}
-
-#header .space{
-	width:100%;
-	display:grid;
-	grid-template-areas: 'identitas social-media';
-	background-color:pink;
-	align-items:center;
 }
 
 /* @media only screen and (max-width: 600px) {
@@ -99,17 +97,14 @@
 
 .navbar2 .judul{
 	display: flex;
-	background-color: black;
 }
 
 .navbar2 .logo{
 	grid-area: logo;
-	background-color: red;
 }
 
 .navbar2 .keterangan{
 	grid-area: keterangan;
-	background-color: blue;
 }
 
 .navbar2 .keterangan text{
@@ -123,14 +118,12 @@
 	width: 80%;
 	justify-content: flex-end;
 	gap:4%;
-	background-color: yellow;
 }
 
 .navbar2 .media a{
 	display: flex;
 	width: 20%;
 	justify-content: flex-end;
-	background-color: blue;
 }
 
 .navbar2 .media img{
@@ -202,6 +195,7 @@
 .container2 .center h5{
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
+	background-size: cover;
 	margin-top: 5px;
 }
 
@@ -235,6 +229,28 @@
 /* card */
 .container .kartu .card2{
 	background-color: red;
+}
+
+.container .last img{
+	width:100%;
+	position:cover;
+	display:block;
+}
+
+.container .last{
+	padding:0;
+	width:150vmin;
+	height:80vmin;
+	overflow:hidden;
+	border:3px solid #ffffff;
+	border-radius:5px;
+	box-shadow:1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.container .last .wrapper{
+	width: 100%;
+	display:flex;
+	animation:slide 30s infinite;
 }
 
 
@@ -572,6 +588,106 @@ div.desc {
 	grid-area: detail;
 }
 
+/* Jadwal Shalat */
+.jadwal-shalat{
+	width: 84.3%;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+}
+
+.jadwal-shalat .buka{
+	width: 95%;
+}
+
+.jadwal-shalat .item{
+	width:auto;
+	display: flex;
+	justify-content: center;
+	padding:0;
+	gap:1%;
+	margin:0;
+}
+
+.item .satu{
+	grid-area: satu;
+	width:10rem;
+	background-image:url(../img/masjid.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:2%;
+}
+
+.item .dua{
+	grid-area: dua;
+	width:10rem;
+	background-image:url(../img/masjid.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:2%;
+}
+.item .tiga{
+	grid-area: tiga;
+	width:10rem;
+	background-image:url(../img/masjid.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:2%;
+}
+.item .empat{
+	grid-area: empat;
+	width:10rem;
+	background-image:url(../img/masjid.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:2%;
+}
+.item .lima{
+	grid-area: lima;
+	width:10rem;
+	background-image:url(../img/masjid.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:2%;
+}
+.item .enam{
+	grid-area: enam;
+	width:10rem;
+	background-image:url(../img/masjid.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-top:2%;
+}
+
+.artikel-terkini{
+	background-color:blue;
+	color:#ffffff;
+	border-radius:4px;
+	width:84.3%;
+}
+
+.container .last{
+	padding:0;
+	width:162vmin;
+	height:70vmin;
+	overflow:hidden;
+	border:3px solid #ffffff;
+	border-radius:5px;
+	box-shadow:1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.container .last .wrapper{
+	width: 100%;
+	display:flex;
+	animation:slide 30s infinite;
+}
+
+.container .last img{
+	width:100%;
+	position:cover;
+	display:block;
+}
+
 
 /* .lokasi-kantor .info-desa{
 	display: flex;
@@ -618,6 +734,33 @@ div.desc {
 		text-align: center;
 	}
 
+	/* Jadwal Shalat */
+	.jadwal-shalat .item{
+		display: flex;
+		width: 100%;
+		padding:0;
+		gap: 2%;
+	}
+
+	.item .satu{
+		grid-area: satu;
+	}
+	.item .dua{
+		grid-area: dua;
+	}
+	.item .tiga{
+		grid-area: tiga;
+	}
+	.item .empat{
+		grid-area: empat;
+	}
+	.item .lima{
+		grid-area: lima;
+	}
+	.item .enam{
+		grid-area: enam;
+	}
+
 }
 
 
@@ -633,7 +776,6 @@ div.desc {
 		'identitas'
 		'social-media';
 		justify-content: center;
-		background-color: red;
 		flex-direction: column;
 	}
 	
@@ -761,7 +903,6 @@ div.desc {
 	.informasi-tambahan .album-galeri .album{
 		display: flex;
 		flex-direction: row;
-		background-color: blue;
 	}
 	
 	/* Peta Desa */
@@ -830,6 +971,53 @@ div.desc {
 		text-align: center;
 	}
 
+	.jadwal-shalat{
+		width: 100%; 
+		padding:0; 
+		margin:0;
+		
+	}
+
+	.jadwal-shalat .item{
+		display: grid;
+		width: 100%;
+		padding-top: 2%;
+		grid-template-areas: 
+		'satu dua tiga'
+		'empat lima enam';
+	}
+
+	.jadwal-shalat .buka{
+		font-weight:bold;
+		margin:auto;
+		width:93%;
+	}
+
+	.item .satu{
+		grid-area: satu;
+	}
+	.item .dua{
+		grid-area: dua;
+	}
+	.item .tiga{
+		grid-area: tiga;
+	}
+	.item .empat{
+		grid-area: empat;
+	}
+	.item .lima{
+		grid-area: lima;
+	}
+	.item .enam{
+		grid-area: enam;
+	}
+
+	.artikel-terkini{
+		background-color:blue;
+		color:#ffffff;
+		border-radius:4px;
+		width:100%;
+	}
 
 }
 
@@ -846,7 +1034,6 @@ div.desc {
 		'identitas'
 		'social-media';
 		justify-content: center;
-		background-color: red;
 		flex-direction: column;
 	}
 
@@ -973,7 +1160,6 @@ div.desc {
 
 	.informasi-tambahan .album-galeri .album{
 		display: flex;
-		background-color: blue;
 	}
 	
 	/* Peta Desa */
@@ -1016,6 +1202,78 @@ div.desc {
 
 	.sejarah-desa-section h5{
 		text-align: center;
+	}
+
+	.jadwal-shalat{
+		width: 95%;  
+	}
+
+	.jadwal-shalat .item{
+		display: grid;
+		width: 100%;
+		gap: 5%;
+		padding-bottom: 5%;
+		justify-content: center;
+		grid-template-areas: 
+		'satu dua'
+		'tiga empat'
+		'lima enam';
+	}
+
+	.item .satu{
+		grid-area: satu;
+	}
+	.item .dua{
+		grid-area: dua;
+	}
+	.item .tiga{
+		grid-area: tiga;
+	}
+	.item .empat{
+		grid-area: empat;
+	}
+	.item .lima{
+		grid-area: lima;
+	}
+	.item .enam{
+		grid-area: enam;
+	}
+
+	.jadwal-shalat .buka{
+		font-weight:bold;
+		margin:auto;
+		width:73.9%;
+	}
+
+
+	.artikel-terkini{
+		background-color:blue;
+		color:#ffffff;
+		border-radius:4px;
+		width:95%;
+	}
+
+	
+	.container .last{
+		padding:0;
+		width:91vmin;
+		height:125vmin;
+		overflow:hidden;
+		border:3px solid #ffffff;
+		border-radius:5px;
+		box-shadow:1px 1px 10px rgba(0,0,0,0.3);
+	}
+	
+	.container .last .wrapper{
+		width: 100%;
+		display:flex;
+		animation:slide 30s infinite;
+	}
+
+	.container .last img{
+		width:100%;
+		position:cover;
+		display:block;
 	}
 
 }

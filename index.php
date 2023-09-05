@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/style2.css">
 
+	<!-- Bootstrap Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 	<!-- font -->
@@ -52,7 +53,6 @@
 			}
 		}
 	</style>
-
 </head>
 <body>
 	<div class="navbar2 navbar-expand-lg navbar" id="navbar2">
@@ -79,13 +79,14 @@
 	  	</div>
 	</div>
 
+
 	<header id="header" class="header">
-		<div class="jumbotron d-flex bg-dark">
-					<div class="logo col-md-auto" style="padding:0; margin-top:0;width:20%;">
+		<div class="jumbotron d-flex text-white">
+					<div class="logo col-md-auto" style="padding:0; margin-top:0;width:20%">
 						<img src="assets/img/logo.PNG" class="img-fluid" style="width:100%;"> 
 					</div>
 					<div class="space">
-					<div class="identitas">
+					<div class="identitas" style="width:100%;">
 						<div class="alamat" style="">
 							<h3 class="h5" style="">Desa Kuede Krueng Geukueh</h3>
 							<p>Jl. Aman Rt 008 Rw 004 <br> Kecamatan Dewantara, Kabupaten Aceh Utara, Provinsi Aceh <br> Kode Pos 24313</p>
@@ -95,19 +96,20 @@
 						</div>
 					</div>
 					<div class="social-media" style="">
-						<a class="btn btn-sm btn-success success-gradient ml-2" style="height:20%;" href="https://api.whatsapp.com/send?l=id&text=https://pedekik.desa.id/%0A%0A" rel='noopener noreferrer' target='_blank' title='WhatsApp'><i class="bi bi-whatsapp"></i> WhatsApp
+						<a class="btn btn-sm btn-success success-gradient ml-2 d-flex" style="height:20%;" href="https://api.whatsapp.com/send?l=id&text=https://pedekik.desa.id/%0A%0A" rel='noopener noreferrer' target='_blank' title='WhatsApp'><i class="bi bi-whatsapp"></i>&nbsp;WhatsApp
 						</a>
-						<a class="btn btn-sm btn-primary success-gradient ml-2" style="height:20%;" href="https://api.whatsapp.com/send?l=id&text=https://pedekik.desa.id/%0A%0A" rel='noopener noreferrer' target='_blank' title='WhatsApp'><i class="bi bi-facebook"></i> Facebook
+						<a class="btn btn-sm btn-primary success-gradient ml-2 d-flex" style="height:20%;" href="https://api.whatsapp.com/send?l=id&text=https://pedekik.desa.id/%0A%0A" rel='noopener noreferrer' target='_blank' title='WhatsApp'><i class="bi bi-facebook"></i>&nbsp;Facebook
 						</a>
 					</div>
 					</div>
 		</div>
 	</header>
+
 	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
 		<div class="container-fluid">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon bg-primary" style=""></span>
+		<i class="bi bi-list" style="color:white;font-size:30px;"></i>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -133,9 +135,6 @@
 			<ul class="dropdown-menu bg-primary">
 				<li><a class="dropdown-item" href="index.php?page=data-wilayah">Data Wilayah Administratif</a></li>
 				<li><a class="dropdown-item" href="index.php?page=sejarah">RPJM</a></li>
-				<li><a class="dropdown-item" href="#"></a></li>
-				<li><a class="dropdown-item" href="index.php?page=struktur-organisasi">Struktur Organisasi</a></li>
-				<li><a class="dropdown-item" href="index.php?page=galeri">Galeri</a></li>
 			</ul>
 			</li>
 	        <li class="nav-item">
@@ -282,11 +281,11 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="assets/js/bootstrap.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/jquery.js"></script>
-
+	<script src="assets/js/be/bootstrap/js/bootstrap.js"></script>
+	
 </body>
 </html>

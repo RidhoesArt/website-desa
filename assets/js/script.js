@@ -1,37 +1,18 @@
 
-$('#beranda').on('click', function(){  
-    $.ajax({
-        url: 'https://newsapi.org/v2/top-headlines',
-        type: 'get',
-        dataType: 'json',
-        data: {
-            'country' : $(this).data('id'),
-            'apiKey' : '0ded2b227ae74601b9a7bd7155d9ac56'
-        },
-        success: function(movie){
-            console.log(movie)
-            if(movie.articles.source.id == "null"){
+function getJadwalShalat(){
+    fetch("https://api.banghasan.com/sholat/format/json/jadwal/kota/703/tanggal/2017-02-07")
+    .then((response) => response.json())
+    .then((data) => {
+        const jadwal = data.jadwal.data;
+        console.log(jadwal);
+        document.querySelector('.imsak').textContent = jadwal.imsak;
+        document.querySelector('.subuh').textContent = jadwal.subuh;
+        document.querySelector('.dzuhur').textContent = jadwal.dzuhur;
+        document.querySelector('.ashar').textContent = jadwal.ashar;
+        document.querySelector('.maghrib').textContent = jadwal.maghrib;
+        document.querySelector('.isya').textContent = jadwal.isya;
+    }
+    );
+}
 
-                $('.body-beranda').html(`
-                <div class="container-fluid">
-                    <div class="row">
-                       <div class="col-md-4">
-                       <img src="` + movie.author + `" class="img-fluid">
-                       </div>
-
-                        <div class="col-md-8">
-                            <ul class="list-group">
-                                <li class="list-group-item"><h3>` + movie.title + `</h3></li>
-                                <li class="list-group-item">Release : ` + movie.description + `</li>
-                                <li class="list-group-item">Genre : ` + movie.urlToImage + `</li>
-                                <li class="list-group-item">Director : ` + movie.publishedAt + `</li>
-                                <li class="list-group-item">Aktors : ` + movie.content + `</li>
-                            </ul>
-                       </div> 
-                    </div>
-                </div>
-                `);
-            }
-        }
-    });
-});
+getJadwalShalat();
